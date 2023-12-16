@@ -15,8 +15,10 @@ def do_withdraw(bank):
                     break  # Sair do loop se o saque for bem-sucedido
                 elif withdraw_amount <= 0:
                     print("Withdrawal amount must be above R$ 0.")
+                    break
                 else:
                     print("Invalid withdrawal amount. Please check your balance and withdrawal limit.")
+                    break
             except ValueError:
                 print("Invalid input. Please enter a valid integer value.")
     else:
